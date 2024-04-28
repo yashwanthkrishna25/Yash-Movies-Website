@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+body{
+    background: #282828; 
+    overflow-x: hidden;
+}
+.body{
+    background-color: rgb(78, 221, 34);
+}
+nav{
+    background: #2c2e30;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    height: 60px;
+    padding: 0 100px;
+}
+nav .logo{
+    cursor: pointer;
+}
+nav .nav-items{
+    display: flex;
+    flex: 1;
+    padding: 0 0 0 40px;
+    margin-left: 330px;
+}
+nav .nav-items a{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500px;
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 15px;
+}
+nav .nav-items a i{
+    color: rgb(30, 180, 210);
+    padding: 2px;
+}
+nav form{
+    display: flex;
+    height: 40px;
+    padding: 2px;
+    background: #1e232b;
+    min-width: 18% !important;
+    border-radius: 30px;
+    border: 1px solid rgba(155, 155, 155, 0.2);
+}
+nav form .search-data{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    color: #61ee1f;
+    font-size: 17px;
+   border: none;
+   font-weight: 500;
+   background: none;
+}
+nav form button{
+    padding: 0 15px;
+    color: #fff;
+    font-size: 17px;
+    background: rgb(39, 189, 231);
+    border: none;border-top-right-radius: 17px;
+    border: none;border-bottom-right-radius: 17px;
+    cursor: pointer;
+}
+nav form button:hover{
+    background:rgb(39, 149, 179) ;
+}
+.content{
+    margin-top:30px;
+    text-align: center;
+    color: white;
+}
+.content h1{
+    justify-content: space-between;
+    letter-spacing: 10px;
+    font-family: "EB Garamond", serif;
+}.content p{
+    margin-top: 30px;
+}
+.content p i{
+    color: rgb(39, 189, 231);
+}
+.content .underline{
+    width: 30%;
+    height: 30px;
+}
+.movie-iteams{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 17px;
+    margin-top: 3%;
+}
+.movie-iteams1{
+    margin: 20px;
+}
+.column{
+    display: block;
+    float: left;
+    width: 20%;
+    cursor: pointer;
+}
+.column img{
+    border-radius: 10px;
+}
+.row::after{
+    content: '';
+    clear: both;
+    display: flex;
+}
+.column h4,p{
+    color: white;
+}
+.column:hover{
+    scale: 1.1;
+}
+
+
+/* 2nd page coding */
+.content p img{
+    float: left;
+    margin-left: 60px;
+    border-radius: 10px;
+    margin-right: 60px;
+}
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+}
+.year{
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+.genres{
+    font-size: 20px;
+    text-align: left;
+}
+.cast span{
+    font-weight: bold;
+    color: #fff;
+}
+.cast{
+    margin-top: 40px;
+    font-size: 15px;
+    color: rgb(155, 143, 143);
+    text-align: left;
+}
+.director span{
+    font-weight: bold;
+    color: #fff;
+}
+.director{
+    margin-top: 10px;
+    font-size: 15px;
+    color: rgb(155, 143, 143);
+    text-align: left;
+}
+.buttons{
+    margin-top: 5%;
+}
+.btn{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 30px;
+}
+.btn1{
+    border: 2px solid black;
+    background-color: black;
+    padding: 20px 40px 20px 40px;
+    font-size: 20px;
+}
+.btn1 span{
+    margin-left: 10px;
+}
+.btn2{
+    border: 2px solid rgb(5, 196, 244);
+    background-color: rgb(5, 196, 244);
+    padding: 20px 40px 20px 40px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.btn2 span{
+    margin-left: 10px;
+}
+.video{
+    padding: 40px;
+    padding-bottom: 0px;
+    margin: 40px;
+    margin-bottom: 0px;
+    border: none;
+}
+.buttons1{
+    margin-top: 40px;
+    margin-left: 90px;
+}
+.ser-btn1{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+    border: 1px solid rgb(122, 122, 122);
+    padding: 10px;
+    font-weight: bold;
+    background-color:rgba(20, 201, 225, 0.911);
+}
+.ser-btn2{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+    border: 1px solid rgb(122, 122, 122);
+    padding: 10px;
+    font-weight: bold;
+    background-color: transparent;
+}
+.ser-btn3{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+    border: 1px solid rgb(122, 122, 122);
+    padding: 10px;
+    font-weight: bold;
+    background-color: transparent;
+}
+.buttons1 :hover{
+    background-color:rgba(20, 201, 225, 0.911);
+}
+.syn{
+    margin-left: 70px;
+    margin-top: 40px;
+}
+.syn span{
+    color: rgb(20, 162, 251);
+    font-weight: bold;
+}
+#footer{
+    background-color: black;
+    margin-top: 20px;
+    height: 90px;
+}
+#footer a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+.alignleft{
+    float: left;
+    padding: 30px;
+    margin-left: 40px;
+}
+.alignright{
+    float: right;
+    padding: 30px;
+    margin-right: 500px;
+}
+containe-copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+ .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+  }
+  nav .nav-items-btn{
+    display: none;
+}
+.nav-items{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 96%;
+    }
+    .movie-iteams1{
+        margin: 20px;
+    }
+    .column{
+        display: block;
+        float: left;
+        width: 20%;
+        cursor: pointer;
+        column-gap: 1/3;
+    }
+    .column img{
+        border-radius: 10px;
+    }
+    .row::after{
+        content: '';
+        clear: both;
+        display: flex;
+        column-gap: 1/3;
+    }
+    .column h4,p{
+        color: white;
+    }
+    .column:hover{
+        scale: 1.1;
+    }
+   
+}
+
+
+
+
+@media screen and (max-width: 992px){
+    .container{
+        gap: 0;
+    }
+    .movie-iteams1{
+        margin: 20px;
+    }
+    .column{
+        display: block;
+        float: left;
+        width: 20%;
+        cursor: pointer;
+        column-gap: 1/3;
+    }
+    .column img{
+        border-radius: 10px;
+    }
+    .row::after{
+        content: '';
+        clear: both;
+        display: flex;
+        column-gap: 1/3;
+    }
+    .column h4,p{
+        color: white;
+    }
+    .column:hover{
+        scale: 1.1;
+    }
+}

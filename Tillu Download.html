@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Ratham</title>
+    <style>
+        .container button:disabled{
+            background-color: rgba(16, 152, 237, 0.642);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 40%;
+        }
+        .container button{
+            background-color: rgba(16, 152, 237, 0.916);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 45%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;">
+    <style>
+        img{
+         max-width: 100%;
+         max-height: 100%;
+        }
+       .picture1 {
+         width: 80px;
+         max-height: 150px;
+       }
+    </style>
+ </head>
+<body>
+    <nav>
+
+        <div class="picture1">
+          <img src="images/logo.png.png" alt="picture1">
+        </div>
+<input type="checkbox" class="nav-items-btn" id="nav-items-btn"/>
+<label class="nav-items-icon" for="nav-items-btn">
+    <span class="nav-icon"></span>
+</label>
+        <div class="nav-items">
+            <a href="#"> <i class="fa-solid fa-user-group"></i>About</a>
+            <a href="#"><i class="fa-solid fa-bug"></i>Bug Report</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>Contact</a>
+            
+       
+        </div>
+        <form action="#">
+            <input type="search" class="search-data" placeholder="search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+    </nav>
+    <div class="container">
+        <a href="https://gofile.io/d/HVRBcV" download="movie" target="_blank"><button id="download" disabled>Download</button></a>
+    </div>
+    <script>
+        var downloadbtn = document.getElementById("download");
+        var counter = 5;
+        downloadbtn.innerHTML ="Please wait for 5 seconds.";
+        var id;
+    
+        id=setInterval(function(){
+            counter--;
+            if(counter<0){
+                downloadbtn.innerHTML ="Download";
+                downloadbtn.removeAttribute('disabled');
+                clearInterval(id)
+            }else{
+                downloadbtn.innerHTML = "Please wait for "+counter.toString()+" seconds.";
+            }
+        },1000)
+    </script>
+</body>
+</html>
